@@ -170,7 +170,7 @@ MyTim->setPrescaleFactor(8);
 ```cpp
 MyTim->setOverflow(10000); // Default format is TICK_FORMAT. Rollover will occurs when timer counter counts 10000 ticks (it reach it count from 0 to 9999)
 MyTim->setOverflow(10000, TICK_FORMAT);
-MyTim->setOverflow(10000, MICROSEC_FORMAT); // 10000 microseconds
+MyTim->setOverflow(10000, MICROSEC_FORMAT); // 10000 microseconds 实测这里注释是不对的，实际只有10ms 如果填500000，实际是500ms
 MyTim->setOverflow(10000, HERTZ_FORMAT); // 10 kHz
 ```
 
